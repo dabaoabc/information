@@ -40,25 +40,18 @@ aInforServices.controller('dataController', ['$http', function($http){
 //把我们的信息发布给信息列表模板
 aInforServices.controller('addController',function($scope){
 	var id = $rootScope[$rootScope.length-1].id+1;
-	var canClick = true;
 	$scope.submit = function(){
-		if (canClick) {
-			if ($scope.formData.title != undefined && $scope.formData.message != '') {
-				$scope.formData.id = id;
-				$rootScope.push($scope.formData);
-				var submit = angular.element(document.querySelector('#submit'));
-				submit.addClass('submit');
-				canClick = false;
-				alert("提交成功");
-			}else{
-				alert("标题不能为空");
-				return false;
-			}
+		if ($scope.formData.title != undefined && $scope.formData.message != '') {
+			$scope.formData.id = id;
+			$rootScope.push($scope.formData);
+			var submit = angular.element(document.querySelector('#submit'));
+			submit.addClass('submit');
+			$scope.button_clicked = true;
+			alert("提交成功");
 		}else{
-			alert("您已提交");
+			alert("标题不能为空");
 			return false;
-		}
-		
+		}	
 	}
 })
 //收藏界面，主页
@@ -109,4 +102,3 @@ function collect(obj){
 	}
 	return messages;
 }
-

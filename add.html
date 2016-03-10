@@ -10,7 +10,7 @@
 		<label for="collected">收藏：</label>
 		<input type="checkbox" ng-checked="collect" ng-model="formData.collect" id="collected">
 		<br/>
-		<a ng-click="submit()" href="javascript:void(0);" id="submit">提交</a>
+		<button ng-click="submit()" ng-disabled="button_clicked" id="submit">提交</button>
 	</div>
 </form>
 <p class="detail"><a href="#/">回到主页>></a></p>
