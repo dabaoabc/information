@@ -196,7 +196,7 @@ h1 {
   margin-right: 10px;
   border: 1px solid #2ba6cb;
 }
-.addContent a {
+.addContent button {
   display: block;
   width: 200px;
   height: 48px;
@@ -208,7 +208,7 @@ h1 {
   color: #fff;
   text-align: center;
 }
-.addContent a:hover {
+.addContent button:hover {
   background-color: #F37F62;
 }
 .addContent .submit {
