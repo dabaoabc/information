@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/** 重置列表元素 **/
+ul,
+ol {
+  list-style: none;
+}
+/** 重置文本格式元素 **/
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/** 重置表单元素 **/
+legend {
+  color: #000;
+}
+/* for ie6 */
+fieldset,
+img {
+  border: 0;
+}
+/* img 搭车：让链接里的 img 无边框 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: url(../images/background.png);
+}
+a {
+  text-decoration: none !important;
+}
+.wrap {
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+}
+.detail {
+  text-align: right;
+  margin-top: 80px;
+}
+.detail a {
+  color: #1582A2;
+  font-size: 150%;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  height: 80px;
+  line-height: 80px;
+  padding: 10px 25px;
+  margin-bottom: 50px;
+  background-color: #1582A2;
+}
+.collect li {
+  margin-top: 20px;
+}
+.collect a {
+  color: #2ba6cb;
+  font-size: 22px;
+}
+.collect a:hover {
+  color: #1582A2;
+}
+.collect .content {
+  color: #000;
+  font-size: 18px;
+}
+.search {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 400px;
+}
+.search label {
+  color: #2ba6cb;
+  font-size: 16px;
+}
+.search input {
+  color: #000;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.search .searchResult {
+  margin-top: 10px;
+  color: 000;
+  font-size: 12px;
+}
+.add {
+  position: relative;
+  top: 40px;
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #43B7DA;
+  text-align: center;
+  border-radius: 5px;
+}
+.add:hover {
+  background-color: #5EC7E6;
+}
+.add a {
+  padding: 7px 44%;
+  color: #fff;
+  line-height: 40px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+.addContent label {
+  color: #2ba6cb;
+  font-size: 16px;
+}
+.addContent input,
+.addContent textarea {
+  color: #000;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #2ba6cb;
+}
+.addContent a {
+  display: block;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 0;
+  background-color: #e64;
+  color: #fff;
+  text-align: center;
+}
+.addContent a:hover {
+  background-color: #F37F62;
+}
+.addContent .submit {
+  background-color: #e7e7e8;
+  color: #ccc;
+}
+.addContent .submit:hover {
+  background-color: #e7e7e8;
+}
+.content_detail .detai_title {
+  line-height: 40px;
+}
+.content_detail p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.content_detail .isCollect {
+  margin-top: 50px;
+  display: block;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 0;
+  background-color: #e64;
+  color: #fff;
+  text-align: center;
+}
+.content_detail .isCollect:hover {
+  background-color: #F37F62;
+}
+.content_detail .submit {
+  background-color: #e7e7e8;
+  color: #ccc;
+}
+.content_detail .submit:hover {
+  background-color: #e7e7e8;
+}

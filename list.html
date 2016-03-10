@@ -1,0 +1,18 @@
+<h1>所有信息</h1>
+<ul class="collect">
+	<li ng-repeat="message in messages"><a href="#/view/{{message.id}}"><span>{{message.title}}</span><br/></a><span class="content">{{message.message | limitTo : 30}}</span></li>
+</ul>
+<div class="search">
+
+	<input type="text" ng-model="mysearch" id="mysearch">
+	<label for="mysearch">搜索</label>
+	<div ng-hide="hide">
+		<ul class="searchResult">
+			<li ng-repeat="message in messages | filter : mysearch"><a href="#/view/{{message.id}}">{{message.title}}</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<p class="add"><a href="../information/#/add">添加</a></p>
+<p class="detail"><a href="#/">回到主页>></a></p>
